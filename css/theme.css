@@ -398,90 +398,117 @@ body {
 
 
 
+
 /* =====================================================
-   PROFESSIONAL PROFILE LINKS WITH ICONS
+   FIX PROFESSIONAL LINKS — ICON SIZE AND ALIGNMENT
    ===================================================== */
 
+.contact-links,
 .contact-links.professional-links {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 12px;
-  margin-top: 26px;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 10px !important;
+  margin-top: 24px !important;
+  padding: 0 !important;
 }
 
-.contact-links.professional-links a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
+/* Keep each icon and its label on the same line */
 
-  min-height: 44px;
-  padding: 10px 15px;
+.contact-links a {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
 
-  color: #282a34;
-  background: #ffffff;
+  width: auto !important;
+  height: auto !important;
+  min-width: 0 !important;
+  min-height: 40px !important;
+  max-width: 100% !important;
 
-  border: 1px solid #e0e3e8;
-  border-radius: 6px;
+  box-sizing: border-box !important;
+  padding: 9px 12px !important;
+  margin: 0 !important;
 
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  text-decoration: none;
+  background: #ffffff !important;
+  color: #343641 !important;
+  border: 1px solid #e0e3e8 !important;
+  border-radius: 5px !important;
 
-  transition:
-    color 0.2s ease,
-    background 0.2s ease,
-    border-color 0.2s ease,
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+
+  transition: background 0.2s ease, border-color 0.2s ease;
 }
 
-.contact-links.professional-links a img,
-.contact-links.professional-links a svg {
-  display: block;
-  width: 20px;
-  height: 20px;
-  flex: 0 0 20px;
+/* Force all logo images to a small, consistent size */
+
+.contact-links a img {
+  display: block !important;
+  width: 20px !important;
+  height: 20px !important;
+  min-width: 20px !important;
+  max-width: 20px !important;
+  min-height: 20px !important;
+  max-height: 20px !important;
+
+  flex: 0 0 20px !important;
+  object-fit: contain !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-.contact-links.professional-links .link-arrow {
-  color: #a8732c;
-  font-size: 13px;
+/* Keep the email icon consistent */
+
+.contact-links a svg {
+  display: block !important;
+  width: 20px !important;
+  height: 20px !important;
+  min-width: 20px !important;
+  max-width: 20px !important;
+  flex: 0 0 20px !important;
+  margin: 0 !important;
 }
 
-.contact-links.professional-links a:hover {
-  color: #ffffff;
-  background: #22232e;
-  border-color: #c79548;
-  box-shadow: 0 5px 15px rgba(34, 35, 46, 0.12);
-  transform: translateY(-2px);
+/* Small external-link arrow */
+
+.contact-links .link-arrow {
+  display: inline !important;
+  color: #a8732c !important;
+  font-size: 12px !important;
 }
 
-.contact-links.professional-links a:hover .link-arrow {
-  color: #efbd73;
+/* Hover effect */
+
+.contact-links a:hover {
+  background: #22232e !important;
+  color: #ffffff !important;
+  border-color: #c79548 !important;
 }
 
-/* Keyboard accessibility */
-
-.contact-links.professional-links a:focus-visible {
-  outline: 3px solid #c79548;
-  outline-offset: 3px;
+.contact-links a:hover .link-arrow {
+  color: #efbd73 !important;
 }
 
-/* Mobile layout */
+/* Mobile screens */
 
 @media (max-width: 560px) {
+  .contact-links,
   .contact-links.professional-links {
-    gap: 9px;
+    gap: 8px !important;
   }
 
-  .contact-links.professional-links a {
-    min-height: 42px;
-    padding: 9px 12px;
-    font-size: 12px;
+  .contact-links a {
+    min-height: 38px !important;
+    padding: 8px 10px !important;
+    font-size: 11px !important;
   }
 }
-
