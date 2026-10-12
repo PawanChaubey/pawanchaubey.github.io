@@ -394,7 +394,289 @@ body {
 
 
 
+/* =====================================================
+   FIX PROFESSIONAL LINKS — ICON SIZE AND ALIGNMENT
+   ===================================================== */
 
+.contact-links,
+.contact-links.professional-links {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 10px !important;
+  margin-top: 24px !important;
+  padding: 0 !important;
+}
+
+/* Keep each icon and its label on the same line */
+
+.contact-links a {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+
+  width: auto !important;
+  height: auto !important;
+  min-width: 0 !important;
+  min-height: 40px !important;
+  max-width: 100% !important;
+
+  box-sizing: border-box !important;
+  padding: 9px 12px !important;
+  margin: 0 !important;
+
+  background: #ffffff !important;
+  color: #343641 !important;
+  border: 1px solid #e0e3e8 !important;
+  border-radius: 5px !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+/* Force all logo images to a small, consistent size */
+
+.contact-links a img {
+  display: block !important;
+  width: 20px !important;
+  height: 20px !important;
+  min-width: 20px !important;
+  max-width: 20px !important;
+  min-height: 20px !important;
+  max-height: 20px !important;
+
+  flex: 0 0 20px !important;
+  object-fit: contain !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Keep the email icon consistent */
+
+.contact-links a svg {
+  display: block !important;
+  width: 20px !important;
+  height: 20px !important;
+  min-width: 20px !important;
+  max-width: 20px !important;
+  flex: 0 0 20px !important;
+  margin: 0 !important;
+}
+
+/* Small external-link arrow */
+
+.contact-links .link-arrow {
+  display: inline !important;
+  color: #a8732c !important;
+  font-size: 12px !important;
+}
+
+/* Hover effect */
+
+.contact-links a:hover {
+  background: #22232e !important;
+  color: #ffffff !important;
+  border-color: #c79548 !important;
+}
+
+.contact-links a:hover .link-arrow {
+  color: #efbd73 !important;
+}
+
+/* Mobile screens */
+
+@media (max-width: 560px) {
+  .contact-links,
+  .contact-links.professional-links {
+    gap: 8px !important;
+  }
+
+  .contact-links a {
+    min-height: 38px !important;
+    padding: 8px 10px !important;
+    font-size: 11px !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   FINAL FIX: PROFESSIONAL LINKS AND ICONS
+   ===================================================== */
+
+.contact-links.professional-links {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 10px !important;
+  margin: 24px 0 0 !important;
+  padding: 0 !important;
+}
+
+.contact-links.professional-links a {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+
+  width: auto !important;
+  height: auto !important;
+  min-width: 0 !important;
+  min-height: 40px !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+
+  margin: 0 !important;
+  padding: 9px 12px !important;
+
+  background: #ffffff !important;
+  color: #343641 !important;
+  border: 1px solid #e0e3e8 !important;
+  border-radius: 5px !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0 !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+}
+
+/* Uniform icon container */
+
+.contact-links.professional-links .social-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 20px !important;
+  height: 20px !important;
+  min-width: 20px !important;
+  max-width: 20px !important;
+  min-height: 20px !important;
+  max-height: 20px !important;
+
+  flex: 0 0 20px !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  line-height: 1 !important;
+}
+
+/* Uniform SVG sizing */
+
+.contact-links.professional-links .social-icon svg {
+  display: block !important;
+  width: 20px !important;
+  height: 20px !important;
+  min-width: 20px !important;
+  max-width: 20px !important;
+  min-height: 20px !important;
+  max-height: 20px !important;
+}
+
+/* Google Scholar */
+
+.contact-links.professional-links .scholar-icon {
+  color: #4285f4 !important;
+}
+
+/* ORCID */
+
+.contact-links.professional-links .orcid-icon {
+  border-radius: 50% !important;
+  background: #a6ce39 !important;
+  color: #ffffff !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+}
+
+/* GitHub */
+
+.contact-links.professional-links .github-icon {
+  color: #181717 !important;
+}
+
+/* LinkedIn */
+
+.contact-links.professional-links .linkedin-icon {
+  border-radius: 3px !important;
+  background: #0a66c2 !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  letter-spacing: -1px !important;
+}
+
+/* Email */
+
+.contact-links.professional-links .email-icon {
+  color: #6b7280 !important;
+}
+
+/* External-link arrow */
+
+.contact-links.professional-links .link-arrow {
+  color: #a8732c !important;
+  font-size: 12px !important;
+}
+
+/* Hover effect */
+
+.contact-links.professional-links a:hover {
+  background: #22232e !important;
+  border-color: #c79548 !important;
+  color: #ffffff !important;
+}
+
+.contact-links.professional-links a:hover .github-icon,
+.contact-links.professional-links a:hover .email-icon {
+  color: #ffffff !important;
+}
+
+.contact-links.professional-links a:hover .link-arrow {
+  color: #efbd73 !important;
+}
+
+/* Mobile */
+
+@media (max-width: 560px) {
+  .contact-links.professional-links {
+    gap: 8px !important;
+  }
+
+  .contact-links.professional-links a {
+    min-height: 38px !important;
+    padding: 8px 10px !important;
+    font-size: 11px !important;
+  }
+}
 
 
 
