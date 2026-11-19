@@ -1981,3 +1981,26 @@ button {
   }
 }
 
+
+
+
+
+
+
+.thesis-link {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.thesis-link a {
+    color: #c58b35;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.thesis-link a:hover {
+    color: #22232c;
+    text-decoration: underline;
+}
+
